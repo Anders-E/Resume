@@ -1,0 +1,96 @@
+% Original design by Alessandro Plasmati.
+% Modified by Anders Eriksson 27 Jan 2016
+
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{marvosym}
+\usepackage{fontspec} 						%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo} 					%better formatting of the A4 page
+\usepackage{titlesec}						%custom \section
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[
+SmallCapsFont = Lato-Regular.ttf,
+BoldFont = Lato-Bold.ttf,
+ItalicFont = Lato-Italic.ttf
+]
+{Lato-Regular.ttf}
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+%--------------------BEGIN DOCUMENT-----------------------------
+\begin{document}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE--------------------------------------
+\par{\centering
+		{\Huge Anders Eriksson
+	}\bigskip\par}
+
+%--------------------SECTIONS-----------------------------------
+\section{Personal Data}
+
+\begin{tabular}{rl}
+    \textbf{Place and Date of Birth:} & G{\"a}vle, Sweden  | 12 Dec 1991 \\
+    \textbf{Address:}   & Studentbacken 21-1205, 115 57, Stockholm, Sweden \\
+    \textbf{Phone:}     & +46 70 645 24 53\\
+    \textbf{email:}     & \href{mailto:eriksson.c.anders@gmail.com
+}{eriksson.c.anders@gmail.com}\\
+    \textbf{LinkedIn:}	& \href{http://se.linkedin.com/in/canderseriksson}{se.linkedin.com/in/canderseriksson}
+\end{tabular}
+
+\section{Technical Skills}
+\begin{tabular}{rl}
+Main Skills:& Software Development, Python, Java, Linux \\
+Intermediate Knowledge:& C, Perl 5, Prolog, Git, \LaTeX\\
+Basic Knowledge:& HTML, CSS, JavaScript, Haskell \\
+\end{tabular}
+
+\section{Experience}
+\begin{tabular}{r|p{11cm}}
+ \emph{Current, since} & Contributor at \textbf{Duolingo}\\\textbf{December 2014}&\emph{Free Language Education, Voluntary Work}\\&\footnotesize{Been on the team for the course \emph{Swedish for English speakers} since late 2014. Working with a team of ten on a course with over one million users as
+ of October 2015. Tasks include developing the course, adding acceptable translations of English
+ and Swedish sentences and maintaining the Swedish message boards. Went to the first \emph{Duolingo Incubator Summit} in Berlin in April/May 2015.}\\\multicolumn{2}{c}{} \\
+\textbf{2013-2014} & Bartender at \textbf{Bishop's Arms}, Gävle, Sweden \\&\footnotesize{Worked for a year and during the summer of 2015 as part of a team of eight running a British pub. Tasks included serving patrons, handling reservations, as well as opening and closing the pub and balancing the registers. The job taught me a lot about stress management as well as the importance of handling customer relations.}
+\end{tabular}
+
+\section{Education}
+\begin{tabular}{rl}
+\emph{Current, since} & \textbf{KTH Royal Institute of Technology}, Stockholm, Sweden\\	
+ \textbf{June} 2019 & Master of Science in \textbf{Computer Science}\\&\\
+\textbf{Summer} 2015& \textbf{Mid Sweden University}\\& Introduction to \textbf{Operating Systems}, with Applications in Linux\\&\\
+\textbf{June} 2013& \textbf{Uppsala University}, Uppsala, Sweden\\& Courses in French, Russian, and linguistics\\&\\
+\textbf{June} 2010& \textbf{Vasaskolan}, Gävle, Sweden \\& High School, Natural Science Programme
+\end{tabular}
+
+\section{Languages}
+\begin{tabular}{rll}
+\textbf{Swedish:}&Native Language\\
+\textbf{English:}&Fluent&(C2)\\
+\textbf{French:}&Intermediate&(B1)\\
+\textbf{Portuguese:}&Intermediate&(B1)\\
+\textbf{Italian:}&Elementary&(A2)\\
+\textbf{German:}&Elementary&(A2) \\
+\textbf{Russian:}&Elementary&(A2)
+\end{tabular}
+
+\section{Interests and Activities}
+Technology, Computers, Open-Source, Programming\\
+Music, Travelling, Skiing, Games
+
+\end{document}
