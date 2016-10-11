@@ -19,11 +19,13 @@
 %FONTS
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont[
-SmallCapsFont = Lato-Regular.ttf,
-BoldFont = Lato-Bold.ttf,
+SmallCapsFont = CrimsonText-Roman.ttf,
+BoldFont = CrimsonText-Semibold.ttf,
 ItalicFont = Lato-Italic.ttf
 ]
 {Lato-Regular.ttf}
+
+\newfontfamily\bitter[]{CrimsonText-Roman.ttf}
 
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{3pt}{3pt}
@@ -38,15 +40,26 @@ ItalicFont = Lato-Italic.ttf
 \font\fb=''[cmr10]'' %for use with \LaTeX command
 
 %--------------------TITLE--------------------------------------
-\par{\centering
-		{\Huge Anders Eriksson
-	}\bigskip\par}
+\par{
+    \centering
+	{
+	    \Huge \bitter Anders Eriksson \\
+	    \normalfont
+	    \normalsize Computer Science student and programming enthusiast
+	}
+	\bigskip\par
+}
 
 %--------------------SECTIONS-----------------------------------
+\section{Summary}
+Computer science student at \emph{KTH Royal Institute of Technology} with a huge interest in computer science, human languages, and language technology.
+
+Programming as well as free and open-source software are passions of mine.
+
 \section{Personal Data}
 
 \begin{tabular}{rl}
-    \textbf{Place and Date of Birth:} & G{\"a}vle, Sweden  | 12 Dec 1991 \\
+    \textbf{Place and Date of Birth:} & G{\"a}vle, Sweden  | 2 Dec 1991 \\
     \textbf{Address:}   & Studentbacken 21-1205, 115 57, Stockholm, Sweden \\
     \textbf{Phone:}     & +46 70 645 24 53\\
     \textbf{email:}     & \href{mailto:eriksson.c.anders@gmail.com
@@ -57,24 +70,24 @@ ItalicFont = Lato-Italic.ttf
 
 \section{Technical Skills}
 \begin{tabular}{rl}
-Main Skills:& Software Development, Python, Java, Linux \\
-Intermediate Knowledge:& C, Perl 5, Prolog, Git, \LaTeX\\
-Basic Knowledge:& HTML, CSS, JavaScript, Haskell, Golang \\
+\textbf{Main Skills:}& Software Development, Python, Java, Linux \\
+\textbf{Intermediate Knowledge:}& Perl 5, Prolog, Git, \LaTeX\\
+\textbf{Basic Knowledge:}& C, C++, C\#, HTML, CSS, JavaScript, Haskell, Golang \\
 \end{tabular}
 
 \section{Experience}
 \begin{tabular}{r|p{11cm}}
  \emph{Current, since} & Contributor at \textbf{Duolingo}\\\textbf{December 2014}&\emph{Free Language Education, Voluntary Work}\\&\footnotesize{Been on the team for the course \emph{Swedish for English speakers} since late 2014. Working with a team of ten on a course with over one million users as
- of October 2015. Tasks include developing the course, adding acceptable translations of English
- and Swedish sentences and maintaining the Swedish message boards. Went to the first \emph{Duolingo Incubator Summit} in Berlin in April/May 2015.}\\ \\
-\textbf{2013 - 2014} & Bartender at \textbf{Bishop's Arms}, Gävle, Sweden \\ \textbf{Jun 2015 - Aug 2015}&\footnotesize{Worked as part of a team of eight running a British pub. Tasks included serving patrons, handling reservations, as well as opening and closing the pub and balancing the registers. The job taught me a lot about stress management as well as the importance of handling customer relations.}\\
+ of October 2015. Tasks include developing the course, editing acceptable translations of English
+ and Swedish sentences and maintaining the Swedish message boards. Course has more than two million learners as of October 2016. Went to the first \emph{Duolingo Incubator Summit} in Berlin in April/May 2015.}\\ \\
+\textbf{2013 - 2014} & Bartender at \textbf{Bishop's Arms}, Gävle, Sweden \\ \textbf{Jun 2015 - Aug 2015} \\ \textbf{Jun 2016 - Aug 2016}&\footnotesize{Worked as part of a team of eight running a British pub. Tasks included serving patrons, handling reservations, as well as opening and closing the pub and balancing the registers. The job taught me a lot about stress management as well as the importance of handling customer relations.}\\
 \emph{Summers of}\\\textbf{2011, 2012, 2013} & Greenkeeper at \textbf{Gävle Golfklubb} \\
-&\footnotesize{Worked during summers as a greenkeeper at Gävle Golfklubb. My main areas of responsibility were taking care of the rough and bunkers of the course. Other general maintenance of the course was also carried out.}
+&\footnotesize{Worked during summers as a greenkeeper at Gävle Golfklubb golf course. My main areas of responsibility were taking care of the rough and bunkers of the course. Other general maintenance of the course was also carried out.}
 \end{tabular}
 
 \section{Education}
 \begin{tabular}{rl}
-\emph{Current, since} & \textbf{KTH Royal Institute of Technology}, Stockholm, Sweden\\	
+\emph{Current, graduation in} & \textbf{KTH Royal Institute of Technology}, Stockholm, Sweden\\	
  \textbf{June} 2019 & Master of Science in \textbf{Computer Science}\\&\\
 \textbf{Summer} 2015& \textbf{Mid Sweden University}\\& Introduction to \textbf{Operating Systems}, with Applications in Linux\\&\\
 \textbf{June} 2013& \textbf{Uppsala University}, Uppsala, Sweden\\& Courses in French, Russian, and linguistics\\&\\
@@ -83,17 +96,20 @@ Basic Knowledge:& HTML, CSS, JavaScript, Haskell, Golang \\
 
 \section{Languages}
 \begin{tabular}{rll}
+\large\textbf{Language}&\large\textbf{Proficiency}&\large\textbf{Level}\\
+\\
 \textbf{Swedish:}&Native Language\\
 \textbf{English:}&Fluent&(C2)\\
 \textbf{French:}&Intermediate&(B1)\\
 \textbf{Portuguese:}&Intermediate&(B1)\\
+\textbf{Japanese:}&Elementary&(A2)\\
 \textbf{Italian:}&Elementary&(A2)\\
 \textbf{German:}&Elementary&(A2) \\
 \textbf{Russian:}&Elementary&(A2)
 \end{tabular}
 
 \section{Interests and Activities}
-Technology, Computers, Open-Source, Programming\\
-Music, Travelling, Skiing, Games
+Technology, Computers, Free and open-source software, Programming\\
+Music, Travelling, Brazilian Jiu-Jitsu, Skiing, Games
 
 \end{document}
